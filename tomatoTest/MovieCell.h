@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
 @interface MovieCell : UITableViewCell
 
-@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
-@property (nonatomic, weak) IBOutlet UILabel *starsLabel;
+@property (nonatomic, strong) Movie *movie;
 
 @end

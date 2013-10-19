@@ -24,6 +24,13 @@
 
 -(void) boxOffice {
     [self getPath:@"lists/movies/box_office.json" parameters:@{@"apikey": @"g9au4hv6khv6wzvzgt55gpqs"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        // deserialization code
+        NSArray *movies = [responseObject objectForKey:@"movies"];
+        
+        for (NSDictionary *movie in movies) {
+            // valueForKeyPath is used quite often (e.g., @"movies.title")
+            NSString *title = [movie valueForKeyPath:@"title"];
+        }
         NSLog(@"Response Object: %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Response Object: %@", error);

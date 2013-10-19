@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		520200BE18125CD2009BF77A /* RottenTomatoesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 520200BD18125CD2009BF77A /* RottenTomatoesClient.m */; };
+		520200C118126612009BF77A /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 520200C018126612009BF77A /* Movie.m */; };
 		52BB7787181239A3003E3879 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BB7786181239A3003E3879 /* Foundation.framework */; };
 		52BB7789181239A3003E3879 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BB7788181239A3003E3879 /* CoreGraphics.framework */; };
 		52BB778B181239A3003E3879 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BB778A181239A3003E3879 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		06DA6C73A5CB428CB6E456FE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		520200BC18125CD2009BF77A /* RottenTomatoesClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenTomatoesClient.h; sourceTree = "<group>"; };
 		520200BD18125CD2009BF77A /* RottenTomatoesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesClient.m; sourceTree = "<group>"; };
+		520200BF18126612009BF77A /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		520200C018126612009BF77A /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		52BB7783181239A3003E3879 /* tomatoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tomatoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BB7786181239A3003E3879 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52BB7788181239A3003E3879 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,13 +131,15 @@
 				52BB7796181239A3003E3879 /* AppDelegate.m */,
 				52BB779E181239A3003E3879 /* Images.xcassets */,
 				52BB77BE18123C05003E3879 /* Main.storyboard */,
+				52BB778D181239A3003E3879 /* Supporting Files */,
 				52BB77BB18123B9A003E3879 /* BoxOfficeViewController.h */,
 				52BB77BC18123B9A003E3879 /* BoxOfficeViewController.m */,
-				52BB778D181239A3003E3879 /* Supporting Files */,
 				52BB77C018123F34003E3879 /* MovieCell.h */,
 				52BB77C118123F34003E3879 /* MovieCell.m */,
 				520200BC18125CD2009BF77A /* RottenTomatoesClient.h */,
 				520200BD18125CD2009BF77A /* RottenTomatoesClient.m */,
+				520200BF18126612009BF77A /* Movie.h */,
+				520200C018126612009BF77A /* Movie.m */,
 			);
 			path = tomatoTest;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520200C118126612009BF77A /* Movie.m in Sources */,
 				520200BE18125CD2009BF77A /* RottenTomatoesClient.m in Sources */,
 				52BB7797181239A3003E3879 /* AppDelegate.m in Sources */,
 				52BB77BD18123B9A003E3879 /* BoxOfficeViewController.m in Sources */,

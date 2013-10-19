@@ -9,10 +9,11 @@
 #import "BoxOfficeViewController.h"
 #import "MovieCell.h"
 #import "RottenTomatoesClient.h"
+#import "Movie.h"
 
 @interface BoxOfficeViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (weak, nonatomic) NSArray *movies;
 @end
 
 @implementation BoxOfficeViewController
@@ -32,7 +33,14 @@
     if (self)
     {
         RottenTomatoesClient *client = [[RottenTomatoesClient alloc] init];
-        [client boxOffice];
+        [client boxOfficeWithSuccess:^(AFHTTPRequestOperation *operation, NSArray *movies) {
+            // movies
+            for (Movie *movie in movies) {
+                NSLog(@"title %@", movie.title);
+            }
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            // error
+        }];
     }
     return self;
     
@@ -66,8 +74,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
-    cell.starsLabel.text = @"No Pain, No Gain";
-    cell.titleLabel.text = @"Mark Wahlberg";
+    cell.movie = self.movies[indexPath.row];
+    //cell.starsLabel.text = @"No Pain, No Gain";
+    //cell.titleLabel.text = @"Mark Wahlberg";
     
     return cell;
 }

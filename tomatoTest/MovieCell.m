@@ -10,6 +10,8 @@
 
 @interface MovieCell ()
 
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *starsLabel;
 
 @end
 
@@ -31,4 +33,10 @@
     // Configure the view for the selected state
 }
 
+
+- (void)setMovie:(Movie *)movie {
+    _movie = movie;
+    self.titleLabel.text = movie.title;
+    self.starsLabel.text = movie.stars;
+}
 @end
