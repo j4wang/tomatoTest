@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BoxOfficeViewController : UIViewController
+@interface BoxOfficeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
