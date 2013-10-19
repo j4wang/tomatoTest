@@ -1,0 +1,12 @@
+
+tomatoTest.xcodeproj/project.pbxproj
+
+*.xcworkspacedata
+
+tomatoTest.xcodeproj/project.xcworkspace/xcuserdata/John.xcuserdatad/UserInterfaceState.xcuserstate
+
+tomatoTest.xcodeproj/xcuserdata/John.xcuserdatad/xcschemes/tomatoTest.xcscheme
+
+tomatoTest.xcodeproj/xcuserdata/John.xcuserdatad/xcschemes/xcschememanagement.plist
+
+.DS_Store
