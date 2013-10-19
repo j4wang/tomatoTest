@@ -27,7 +27,7 @@
         NSLog(@"Response Object: %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Response Object: %@", error);
-    }]
+    }];
 }
 
 @end
