@@ -8,6 +8,7 @@
 
 #import "BoxOfficeViewController.h"
 #import "MovieCell.h"
+#import "RottenTomatoesClient.h"
 
 @interface BoxOfficeViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -30,7 +31,8 @@
     self = [super initWithCoder:aDecoder];
     if (self)
     {
-        
+        RottenTomatoesClient *client = [[RottenTomatoesClient alloc] init];
+        [client boxOffice];
     }
     return self;
     
